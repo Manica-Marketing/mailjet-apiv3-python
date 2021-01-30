@@ -70,7 +70,7 @@ class Endpoint(object):
         return api_call(self._auth, 'delete', self._url, action=self.action, headers=self.headers, resource_id=id, **kwargs)
 
 
-class Client(object):
+class MailjetClient(object):
 
     def __init__(self, auth=None, **kwargs):
         self.auth = auth
